@@ -68,13 +68,13 @@
                 </tr>
             </thead>
             <tbody id="leaderboardBody">
-                <!-- Leaderboard data will be inserted here by JavaScript -->
+             
             </tbody>
         </table>
     </div>
 
     <script>
-        // Placeholder data
+        
         const participants = [
             { name: "Ali", score: 120 },
             { name: "Aisha", score: 200 },
@@ -86,13 +86,13 @@
         // Sort participants by score in descending order
         participants.sort((a, b) => b.score - a.score);
 
-        // Populate the leaderboard
+
         const leaderboardBody = document.getElementById('leaderboardBody');
 
         participants.forEach((participant, index) => {
             const row = document.createElement('tr');
 
-            // Highlight top 3 participants
+          
             if (index < 3) {
                 row.classList.add('highlight');
             }
